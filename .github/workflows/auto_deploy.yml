@@ -49,7 +49,7 @@ jobs:
       run: yarn build
         
     - name: Installing Surge
-      run: npm install --global surge
+      run: sudo npm install --global surge
     
     - name: Deploying Surge
       run: surge ./build http://lying-poison1.surge.sh/ --token ${{secrets.SECRET_2}}
